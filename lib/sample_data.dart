@@ -1,0 +1,466 @@
+import 'package:alumni_database/views/profile/education_model.dart';
+import 'package:alumni_database/views/profile/experience_model.dart';
+import 'profiles/profile_model.dart';
+
+List<ProfileModel> profileSampleData = [
+  ProfileModel(
+      id: '0',
+      firstName: 'Zach',
+      lastName: 'Phelps',
+      bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a. Nam aliquam sem et tortor consequat id. Ac feugiat sed lectus vestibulum mattis. Arcu cursus euismod quis viverra nibh.',
+      tagline: 'Incoming Freshman at Stanford University',
+      avatarURL: 'assets/SeniorPhotoHeadshot.jpg',
+      state: 'Indiana',
+      country: 'United States',
+      graduationYear: 2003,
+      education: [
+        EducationModel(
+          id: '1111',
+          name: 'Stanford University',
+          url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+          startDate: 2000,
+          endDate: 2003,
+          tagline: 'Computer Science',
+        ),
+        EducationModel(
+          id: '1112',
+          name: 'Indiana University',
+          url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+          startDate: 2000,
+          endDate: 2003,
+          tagline: 'Computer Science',
+        ),
+      ],
+      experience: [
+        ExperienceModel(
+          name: 'Stanford University',
+          url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+          startDate: 2000,
+          endDate: 2003,
+          tagline: 'Billionaire in training',
+        ),
+      ]
+  ),
+  ProfileModel(
+      id: '1',
+      firstName: 'Elon',
+      lastName: 'Musk',
+      bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a. Nam aliquam sem et tortor consequat id. Ac feugiat sed lectus vestibulum mattis. Arcu cursus euismod quis viverra nibh.',
+      tagline: 'Billionaire, etc.',
+      avatarURL: 'assets/elonMusk.jpg',
+      state: '',
+      country: 'South Africa',
+      graduationYear: 2003,
+      education: [
+        EducationModel(
+          id: '1114',
+          name: 'Stanford University',
+          url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+          startDate: 2000,
+          endDate: 2003,
+          tagline: 'Billionaire in training',
+        ),
+      ],
+      experience: [
+        ExperienceModel(
+          name: 'Stanford University',
+          url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+          startDate: 2000,
+          endDate: 2003,
+          tagline: 'Billionaire in training',
+        ),
+      ]
+  ),
+  ProfileModel(
+    id: '2',
+    firstName: 'Jeff',
+    lastName: 'Bezos',
+    avatarURL: 'assets/jeffBezos.jpg',
+    bio: "Entrepreneur and e-commerce pioneer Jeff Bezos is the founder and CEO of the e-commerce company Amazon, owner of The Washington Post and founder of the space exploration company Blue Origin. His successful business ventures have made him one of the richest people in the world. Born in 1964 in New Mexico, Bezos had an early love of computers and studied computer science and electrical engineering at Princeton University. After graduation, he worked on Wall Street, and in 1990 he became the youngest senior vice president at the investment firm D.E. Shaw. Four years later, Bezos quit his lucrative job to open Amazon.com, an online bookstore that became one of the Internet's biggest success stories. In 2013, Bezos purchased The Washington Post, and in 2017 Amazon acquired Whole Foods. In February 2021, Amazon announced that Bezos will step down as CEO in the third quarter of the year.",
+    tagline: 'Founder and executive chairman of Amazon',
+    state: 'Indiana',
+    country: 'United States',
+    graduationYear: 2003,
+    education: [
+      EducationModel(
+        id: '1116',
+        name: 'Princeton University',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Princeton_seal.svg/280px-Princeton_seal.svg.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Electrical Engineering, Computer Science',
+      ),
+    ],
+    experience: [
+      ExperienceModel(
+        name: 'Amazon',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/1200px-Amazon_icon.svg.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Founder and CEO',
+      ),
+    ],
+  ),
+  ProfileModel(
+    id: '3',
+    firstName: 'Bill',
+    lastName: 'Gates',
+    avatarURL: 'assets/billGates.jpeg',
+    bio: 'Co-chair of the Bill & Melinda Gates Foundation. Founder of Breakthrough Energy. Co-founder of Microsoft. Voracious reader. Avid traveler. Active blogger.',
+    tagline: 'Co-chair, Bill & Melinda Gates Foundation',
+    state: 'Washington',
+    country: 'United States',
+    graduationYear: 2003,
+    education: [
+      EducationModel(
+        id: '1117',
+        name: 'Havard University',
+        url: 'https://media-exp1.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1519855919126?e=1652918400&v=beta&t=0egOJgBYAglVg0Er5brUBXJcjZouXG_bsxkTiNU7URY',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Pre-Law',
+      ),
+      EducationModel(
+        id: '1118',
+        name: 'Lakeside School',
+        url: 'https://media-exp1.licdn.com/dms/image/C4D0BAQENlfOPKBEk3Q/company-logo_100_100/0/1519856497259?e=1652918400&v=beta&t=GInoAuKJN-lyxXyNOPQd-_IA97tC1BXeFHTJWQdCQu0',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: '',
+      ),
+    ],
+    experience: [
+      ExperienceModel(
+        name: 'Bill & Melinda Gates Foundation',
+        url: 'https://media-exp1.licdn.com/dms/image/C4E0BAQE7Na_mKQhIJg/company-logo_100_100/0/1633731810932?e=1652918400&v=beta&t=a9WK36MU-7pFF1wPwBEL2BWWJL2XEQm_wP8Xq5uv3lo',
+        startDate: 2000,
+        endDate: 0,
+        tagline: 'Co-Chair',
+      ),
+      ExperienceModel(
+        name: 'Breakthrough Energy',
+        url: 'https://media-exp1.licdn.com/dms/image/C4D0BAQGwD9vNu044FA/company-logo_100_100/0/1601560874941?e=1652918400&v=beta&t=QMy5KdtLVSeQC5DqOUB9rW1zghrIokfAiDYkTfQcD2U',
+        startDate: 2000,
+        endDate: 0,
+        tagline: 'Founder',
+      ),
+      ExperienceModel(
+        name: 'Microsoft',
+        url: 'https://media-exp1.licdn.com/dms/image/C560BAQE88xCsONDULQ/company-logo_100_100/0/1618231291419?e=1652918400&v=beta&t=cTVeKrkjscFGSjPsR3U5_oM8P8edEBvCRpPM8_hwQWQ',
+        startDate: 2000,
+        endDate: 0,
+        tagline: 'Co-Founder',
+      ),
+    ],
+  ),
+  ProfileModel(
+    id: '4',
+    firstName: 'Tim',
+    lastName: 'Apple',
+    avatarURL: 'assets/timApple.png',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a. Nam aliquam sem et tortor consequat id. Ac feugiat sed lectus vestibulum mattis. Arcu cursus euismod quis viverra nibh.',
+    tagline: 'CEO of Apple, Inc.',
+    state: 'Indiana',
+    country: 'United States',
+    graduationYear: 2003,
+    education: [
+      EducationModel(
+        id: '1119',
+        name: 'Indiana University',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/300px-Indiana_Hoosiers_logo.svg.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+    experience: [
+      ExperienceModel(
+        name: 'Stanford University',
+        url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+  ),
+  ProfileModel(
+    id: '5',
+    firstName: 'Mark',
+    lastName: 'Zuckerberg',
+    avatarURL: 'assets/markZuckerberg.jpg',
+    bio: '',
+    tagline: 'Billionaire, etc.',
+    state: 'Indiana',
+    country: 'United States',
+    graduationYear: 2004,
+    education: [
+      EducationModel(
+        id: '1120',
+        name: 'Havard University',
+        url: 'https://media-exp1.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1519855919126?e=1652918400&v=beta&t=0egOJgBYAglVg0Er5brUBXJcjZouXG_bsxkTiNU7URY',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Psychology, Computer Science',
+      ),
+    ],
+    experience: [
+      ExperienceModel(
+        name: 'Facebook',
+        url: 'https://media-exp1.licdn.com/dms/image/C4E0BAQHi-wrXiQcbxw/company-logo_100_100/0/1635988509026?e=1652918400&v=beta&t=6uph-OiGgTWtezfrBabaQr3n381ABegXqRV37Df0I-8',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'CEO',
+      ),
+    ],
+  ),
+  ProfileModel(
+    id: '6',
+    firstName: 'Sundar',
+    lastName: 'Pichai',
+    avatarURL: 'assets/sundarPichai.jpg',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a. Nam aliquam sem et tortor consequat id. Ac feugiat sed lectus vestibulum mattis. Arcu cursus euismod quis viverra nibh.',
+    tagline: 'Billionaire, etc.',
+    state: 'Indiana',
+    country: 'United States',
+    graduationYear: 2004,
+    education: [
+      EducationModel(
+        id: '1121',
+        name: 'Indiana University',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/300px-Indiana_Hoosiers_logo.svg.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+    experience: [
+      ExperienceModel(
+        name: 'Stanford University',
+        url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+  ),
+  ProfileModel(
+    id: '7',
+    firstName: 'Satya',
+    lastName: 'Nadella',
+    avatarURL: 'assets/satyaNadella.jpg',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a. Nam aliquam sem et tortor consequat id. Ac feugiat sed lectus vestibulum mattis. Arcu cursus euismod quis viverra nibh.',
+    tagline: 'Billionaire, etc.',
+    state: 'Indiana',
+    country: 'United States',
+    graduationYear: 2004,
+    education: [
+      EducationModel(
+        id: '1122',
+        name: 'Indiana University',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/300px-Indiana_Hoosiers_logo.svg.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+    experience: [
+      ExperienceModel(
+        name: 'Stanford University',
+        url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+  ),
+  ProfileModel(
+    id: '8',
+    firstName: 'Larry',
+    lastName: 'Page',
+    avatarURL: 'assets/larryPage.jpg',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a. Nam aliquam sem et tortor consequat id. Ac feugiat sed lectus vestibulum mattis. Arcu cursus euismod quis viverra nibh.',
+    tagline: 'Billionaire, etc.',
+    state: 'Indiana',
+    country: 'United States',
+    graduationYear: 2004,
+    education: [
+      EducationModel(
+        id: '1123',
+        name: 'Indiana University',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/300px-Indiana_Hoosiers_logo.svg.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+    experience: [
+      ExperienceModel(
+        name: 'Stanford University',
+        url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+  ),
+  ProfileModel(
+    id: '9',
+    firstName: 'Warren',
+    lastName: 'Buffet',
+    avatarURL: 'assets/warrenBuffet.jpg',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a. Nam aliquam sem et tortor consequat id. Ac feugiat sed lectus vestibulum mattis. Arcu cursus euismod quis viverra nibh.',
+    tagline: 'Billionaire, etc.',
+    state: 'Indiana',
+    country: 'United States',
+    graduationYear: 2004,
+    education: [
+      EducationModel(
+        id: '1124',
+        name: 'Indiana University',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/300px-Indiana_Hoosiers_logo.svg.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+    experience: [
+      ExperienceModel(
+        name: 'Stanford University',
+        url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+  ),
+  ProfileModel(
+    id: '10',
+    firstName: 'Steve',
+    lastName: 'Ballmer',
+    avatarURL: 'assets/steveBallmer.jpg',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a. Nam aliquam sem et tortor consequat id. Ac feugiat sed lectus vestibulum mattis. Arcu cursus euismod quis viverra nibh.',
+    tagline: 'Billionaire, etc.',
+    state: 'Indiana',
+    country: 'United States',
+    graduationYear: 2005,
+    education: [
+      EducationModel(
+        id: '1125',
+        name: 'Indiana University',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/300px-Indiana_Hoosiers_logo.svg.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+    experience: [
+      ExperienceModel(
+        name: 'Stanford University',
+        url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+  ),
+  ProfileModel(
+    id: '11',
+    firstName: 'Amancio',
+    lastName: 'Ortega',
+    avatarURL: 'assets/amancioOrtega.jpg',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a. Nam aliquam sem et tortor consequat id. Ac feugiat sed lectus vestibulum mattis. Arcu cursus euismod quis viverra nibh.',
+    tagline: 'Billionaire, etc.',
+    state: 'Indiana',
+    country: 'United States',
+    graduationYear: 2004,
+    education: [
+      EducationModel(
+        id: '1126',
+        name: 'Indiana University',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/300px-Indiana_Hoosiers_logo.svg.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+    experience: [
+      ExperienceModel(
+        name: 'Stanford University',
+        url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+  ),
+  ProfileModel(
+    id: '12',
+    firstName: 'Michael',
+    lastName: 'Bloomberg',
+    avatarURL: 'assets/michaelBloomberg.jpg',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a. Nam aliquam sem et tortor consequat id. Ac feugiat sed lectus vestibulum mattis. Arcu cursus euismod quis viverra nibh.',
+    tagline: 'Billionaire, etc.',
+    state: 'Indiana',
+    country: 'United States',
+    graduationYear: 2004,
+    education: [
+      EducationModel(
+        id: '1127',
+        name: 'Indiana University',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/300px-Indiana_Hoosiers_logo.svg.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+    experience: [
+      ExperienceModel(
+        name: 'Stanford University',
+        url: 'http://identity.stanford.edu/wp-content/uploads/2020/07/SU_New_BlockStree_2color_darkbgrd.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+  ),
+  ProfileModel(
+    id: '13',
+    firstName: 'Michael',
+    lastName: 'Dell',
+    avatarURL: 'assets/michaelDell.jpg',
+    bio: "I started Dell with \$1000 in my freshman dorm room at the University of Texas.",
+    tagline: 'Billionaire, etc.',
+    state: 'California',
+    country: 'United States',
+    graduationYear: 2004,
+    education: [
+      EducationModel(
+        id: '1128',
+        name: 'The University of Texas at Austin',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/300px-Indiana_Hoosiers_logo.svg.png',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Billionaire in training',
+      ),
+    ],
+    experience: [
+      ExperienceModel(
+        name: 'Dell Technologies',
+        url: 'https://media-exp1.licdn.com/dms/image/C4E0BAQHd5Km8_W6GVA/company-logo_100_100/0/1614178926580?e=1652918400&v=beta&t=xAuK1DXRPzvGCABjmvyTNC6L8wnOd6bzZPLgaHI_Wu8',
+        startDate: 2000,
+        endDate: 2003,
+        tagline: 'Chairman and CEO',
+      ),
+    ],
+  ),
+];
+
+// final profileProvider = Provider<List<ProfileModel>>((ref) {
+//   return profileSampleData;
+// });
+
+// class ProfileList extends ChangeNotifier {
+//   List<ProfileModel> allProfiles = profileSampleData;
+//
+//   List<ProfileModel> get all => allProfiles;
+// }
